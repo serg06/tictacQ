@@ -5,7 +5,7 @@ import random
 
 Q = dict()
 alpha = 0.2
-lrate = 0.7
+gamma = 0.7
 N_episodes = 10000
 N_tests = 1000
 epsilon = 0.9
@@ -23,7 +23,7 @@ def move(game, a):
     s2, status2 = TicTacToe.get_next_state(s, a)
     if status2 == TicTacToe.ipr:
         Q[(s, a)] = ((1 - alpha) * Q.get((s, a), 0)) + (
-                alpha * (reward(s2) + (lrate * max([Q.get((s2, b), 0) for b in game.get_possible_moves(s2)]))))
+                alpha * (reward(s2) + (gamma * max([Q.get((s2, b), 0) for b in game.get_possible_moves(s2)]))))
     else:
         Q[(s, a)] = ((1 - alpha) * Q.get((s, a), 0)) + (
                 alpha * reward(s2))
