@@ -8,3 +8,8 @@ All state, action pairs are mapped to a Q-value; move is chosen by taking action
 
 87%/11%/2% win/loss/tie rate after 100,000 simulated games.
 
+# Running
+
+- (Optional) Edit hyper-parameters at top of main.py
+- Run main with Python2
+
