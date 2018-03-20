@@ -4,9 +4,9 @@ This a messy, inefficient implementation of learning to play Tic-Tac-Toe w/ Q-le
 
 All state, action pairs are mapped to a Q-value; move is chosen by taking action at each state with highest Q-value.
 
-75%/21%/4% win/loss/tie rate after 10,000 simulated games.
+75%/21%/4% win/tie/loss rate after 10,000 simulated games.
 
-87%/11%/2% win/loss/tie rate after 100,000 simulated games.
+87%/11%/2% win/tie/loss rate after 100,000 simulated games.
 
 # Running
 
